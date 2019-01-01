@@ -2,7 +2,8 @@ body{
   background: #001427;
   margin: 0px;
   font-family: 'Oswald', sans-serif;
-
+  text-align: center;
+  color: white;
 }
 .mainDiv{
   background: #21B5B6;
@@ -40,6 +41,12 @@ body{
   color: white;
 }
 
-.emailForm{
-
+#subBtn{
+  background-color: yellow;
+  height: 80px;
+  width: 150px;
+  margin: 4px;
+  margin-top: 12px;
+  font-size: 1em;
+  border-radius: 20px;
 }
