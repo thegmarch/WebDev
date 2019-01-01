@@ -1,0 +1,45 @@
+body{
+  background: #001427;
+  margin: 0px;
+  font-family: 'Oswald', sans-serif;
+
+}
+.mainDiv{
+  background: #21B5B6;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 50px;
+}
+.secondDiv{
+  background: #001427;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-bottom: 25px;
+  padding-left: 325px;
+  padding-right: 325px;
+  padding-bottom: 15px;
+}
+.heading{
+  text-align: center;
+  color: white;
+}
+
+.para1{
+  text-align: center;
+  color: white;
+  padding: 50;
+}
+
+.para2{
+  text-align: center;
+  color: white;
+}
+
+.signUp{
+  text-align: center;
+  color: white;
+}
+
+.emailForm{
+
+}
