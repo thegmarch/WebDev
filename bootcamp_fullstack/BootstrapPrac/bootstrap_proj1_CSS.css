@@ -1,0 +1,27 @@
+.navbar{
+  border-radius: 50px:
+}
+
+#hpJumbo{
+  text-align: center;
+  font-size: 2em;
+  margin-top: 20px;
+
+}
+
+#signInJumbo{
+  text-align: left;
+  margin-top: 20px;
+}
+
+.label{
+  text-align: left;
+}
+
+.logInForm{
+  text-align: center;
+}
+
+.input{
+  border-radius: 30px;
+}
