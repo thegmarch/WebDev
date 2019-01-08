@@ -90,7 +90,7 @@ if __name__ == '__main__':
         print("face")
 
 
-    while(playerOne.handSize > 0 || playerTwo.handSize > 0)
+    while(playerOne.handSize > 0 or playerTwo.handSize > 0)
     {
         card1 = playerOne.removeCard()
         card2 = playerTwo.removeCard()
@@ -101,6 +101,6 @@ if __name__ == '__main__':
         #determine winner and add cards to winner.hand OR
 
         #for tie, remove three cards from each hand determine if face and
-        #find winner 
+        #find winner
 
     }
