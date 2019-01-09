@@ -4,6 +4,8 @@ from random import shuffle
 suites = "D S H C".split()
 cardVals = "A K Q J 10 9 8 7 6 5 4 3 2".split()
 
+deckTup = [(s,r) for s in suites for r in cardVals]
+
 class Deck:
     """docstring for Deck."""
     def __init__(self,suites,cardVals):
@@ -16,12 +18,8 @@ class Deck:
         for i in range(0,len(self.suites)):
             for j in range(0,len(self.cardVals)):
                 self.deck.append(self.cardVals[j]+self.suites[i])
-    def split(self):
-        if len(self.deck) < 52:
-            print("shuffle deck first")
-        else:
-            print("splitting")
-    def shuffleD(self):
+
+    def shuffleAndSplit(self):
         shuffle(self.deck)
         return self.deck[:26],self.deck[26:]
 
@@ -73,7 +71,7 @@ def checkThreeWinner(setOne, setTwo):
 if __name__ == '__main__':
     gameDeck = Deck(suites, cardVals)
     gameDeck.makeDeck()
-    h1, h2 = gameDeck.shuffleD()
+    h1, h2 = gameDeck.shuffleAndSplit()
     playerOne = Player("g",h1)
     playerTwo = Player("t",h2)
     #gameDeck.split()
@@ -89,18 +87,19 @@ if __name__ == '__main__':
     if c2[0].isalpha():
         print("face")
 
+    print(deckTup)
 
-    while(playerOne.handSize > 0 or playerTwo.handSize > 0)
-    {
-        card1 = playerOne.removeCard()
-        card2 = playerTwo.removeCard()
-        p1Set = []
-        p1Sest = []
-        #check if face card and convert
-
-        #determine winner and add cards to winner.hand OR
-
-        #for tie, remove three cards from each hand determine if face and
-        #find winner
-
-    }
+    # while(playerOne.handSize > 0 or playerTwo.handSize > 0)
+    # {
+    #     card1 = playerOne.removeCard()
+    #     card2 = playerTwo.removeCard()
+    #     p1Set = []
+    #     p1Sest = []
+    #     #check if face card and convert
+    #
+    #     #determine winner and add cards to winner.hand OR
+    #
+    #     #for tie, remove three cards from each hand determine if face and
+    #     #find winner
+    #
+    # }
