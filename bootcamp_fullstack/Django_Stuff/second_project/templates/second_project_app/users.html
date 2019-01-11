@@ -2,21 +2,18 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <title>Users</title>
   </head>
   <body>
-    <h1>List of users registered on application</h1>
-    {% if users %}
-      <ol>
-        {% for person in users %}
-        <li>User Info</li>
-        <ul>
-          <li>First Name: {{person.first_name}}</li>
-          <li>Last Name: {{person.last_name}}</li>
-          <li>User Email: {{person.usr_email}}</li>
-        </ul>
-        {% endfor %}
-      </ol>
-    {% endif %}
+    <div class="container">
+      <h1>Please Sign up Here</h1>
+      <form method="POST">
+        {{form.as_p}}
+        {% csrf_token %}
+        <input type="submit" class="btn btn-primary" value="Submit">
+      </form>
+    </div>
+
   </body>
 </html>
